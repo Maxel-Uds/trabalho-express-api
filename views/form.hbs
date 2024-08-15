@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário Centralizado com Espaçamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px; /* Espaço superior do formulário */
+        }
+
+        input, button {
+            width: 250px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="/users" method="POST">
+        <input type="text" name="name" placeholder="Nome" required="true">
+        <input type="email" name="email" placeholder="Email" required="true">
+        <input type="text" name="address" placeholder="Endereço" required="true">
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
